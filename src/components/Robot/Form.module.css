@@ -1,0 +1,27 @@
+.form {
+  margin-top: 20px;
+  padding: 20px 0;
+
+  h4 {
+    margin: 10px 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.initialPosition,
+.command {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.initialPosition {
+  input {
+    width: 30px;
+  }
+}

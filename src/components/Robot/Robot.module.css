@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(6, 50px);
+  justify-content: center;
+  gap: 2px;
+  transform: rotate(-90deg);
+}
+
+.box {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .vertical,
+  .horizontal {
+    position: absolute;
+    transform: rotate(90deg);
+  }
+
+  .vertical {
+    top: -23px;
+  }
+
+  .horizontal {
+    left: -23px;
+  }
+}
+
+.robot {
+  img {
+    width: 35px;
+    height: 35px;
+    transform: rotate(-90deg);
+  }
+}
+
+h3 {
+  margin: 5px 0;
+}
