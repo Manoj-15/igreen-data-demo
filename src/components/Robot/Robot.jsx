@@ -9,8 +9,8 @@ import {
 } from '../../utils/utils';
 import arrow from './arrow.png';
 
-const initialMatrix = Array.from({ length: 6 }).map((_, i) =>
-  Array.from({ length: 6 }).fill(false)
+const initialMatrix = Array.from({ length: 5 }).map((_, i) =>
+  Array.from({ length: 5 }).fill(false)
 );
 
 const Robot = () => {

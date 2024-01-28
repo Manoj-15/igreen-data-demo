@@ -2,6 +2,7 @@ const isPositionValid = ({ x, y }) => {
   if (x === '' || y === '') {
     return false;
   }
+
   x = Number(x);
   y = Number(y);
 
@@ -9,7 +10,7 @@ const isPositionValid = ({ x, y }) => {
     return false;
   }
 
-  return x >= 0 && x < 6 && y >= 0 && y < 6;
+  return x >= 0 && x < 5 && y >= 0 && y < 5;
 };
 
 const DIRECTION_NAMES = {
