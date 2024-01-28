@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Form.module.css';
-import { COMMANDS, DIRECTIONS, isPositionValid } from './utils';
+import { COMMANDS, DIRECTIONS, isPositionValid } from '../../utils/utils';
 
 const Form = ({ setInitialPosition, report }) => {
   const [position, setPosition] = useState({

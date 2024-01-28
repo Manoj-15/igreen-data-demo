@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import classes from './Robot.module.css';
-import Form from './Form';
+import Form from '../Form/Form';
 import {
   COMMANDS,
   DIRECTIONS,
   DIRECTION_NAMES,
   isPositionValid,
-} from './utils';
+} from '../../utils/utils';
 import arrow from './arrow.png';
 
 const initialMatrix = Array.from({ length: 6 }).map((_, i) =>
@@ -30,10 +30,7 @@ const Robot = () => {
 
     const updatedMatrix = structuredClone(initialMatrix);
 
-    if (position.x !== 0 || position.y !== 0) {
-      updatedMatrix[0][0] = false;
-      updatedMatrix[position.x][position.y] = true;
-    }
+    updatedMatrix[position.x][position.y] = true;
 
     setMatrix(updatedMatrix);
   };
